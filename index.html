@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form validation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <h1>FORM VALIDATION</h1>
+    <form >
+        <div class="inputGroup">
+            <label for="userName">Your name</label>
+            <input id="userName" type="text" placeholder="Enter your name">
+            <span id="nameErr">*Enter your name</span>
+        </div>
+        <div class="inputGroup">
+            <label for="email">Email Address</label>
+            <input id="email" type="email" placeholder="Enter your email">
+            <span id="emailErr">*Enter your correct email address</span>
+
+        </div>
+        <div class="inputGroup">
+            <label for="message">Your Message</label>
+            <textarea name="message" id="message" placeholder="Enter your message"></textarea>
+            <span id="msgErr">*minimum 25 charecters required </span>
+
+        </div>
+        <button id="submitBtn" type="submit">SUBMIT</button>
+    </form>
+
+    <div class="alertBox" id="alertBox">
+        <div class="errIcon">
+            <i class="fa-solid fa-circle-exclamation"></i>
+        </div>
+        <div class="errstatus">
+            Fix the Error
+        </div>
+        <button id="closeBtn" type="button" class="closeBtn">close</button>
+    </div>
+    <div class="submitBox" id="submitBox">
+        <div class="checkIcon"><i class="fa-solid fa-check"></i></div>
+        <div class="submitMsg">SUBMIT SUCCESSFULLY</div>
+        <button id="closeBtn" type="button" class="closeBtn">CLOSE</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
