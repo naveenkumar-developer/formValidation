@@ -18,7 +18,7 @@ This is a Form Validation Website built using HTML, CSS, and JavaScript. It vali
 - Reset alerts using close buttons to hide error/success messages.
 
 ## Demo 📸
-
+Open the project click [here](https://naveenkumar-developer.github.io/formValidation/)
 ![project Demo](assets/form.png)
 
 ---
